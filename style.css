@@ -1,0 +1,324 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #1e1e2f;
+    border-bottom: 2px solid #f472b6;
+}
+
+body.dark-mode .navbar h3,
+body.dark-mode .nav-links a {
+    color: #f472b6;
+}
+
+body.dark-mode .nav-links a:hover {
+    background-color: #f472b6;
+    color: #121212;
+}
+
+body.dark-mode .about-text span,
+body.dark-mode .project-par span {
+    color: #f472b6;
+}
+
+body.dark-mode .about-text button {
+    background-color: #f472b6;
+    color: #121212;
+}
+
+body.dark-mode .about-text button:hover {
+    background-color: #d6336c;
+    color: white;
+}
+
+body.dark-mode .project-card {
+    background-color: #1e1e2f;
+    color: #e0e0e0;
+    border: 1px solid #f472b6;
+}
+
+body.dark-mode .project-card span {
+    color: #f472b6;
+}
+
+body.dark-mode .project-btn {
+    background-color: #f472b6;
+    color: #121212;
+}
+
+body.dark-mode .project-btn:hover {
+    background-color: #d6336c;
+    color: white;
+}
+
+body.dark-mode .social-btn {
+    background-color: #1e1e2f;
+    color: #f472b6;
+    border: 1px solid #f472b6;
+}
+
+body.dark-mode .social-btn:hover {
+    background-color: #f472b6;
+    color: #121212;
+}
+
+body.dark-mode .skills h2,
+body.dark-mode .skills h4 {
+    border-color: #f472b6;
+    color: #e0e0e0;
+}
+
+body.dark-mode .theme-toggle button {
+    background-color: #1e1e2f;
+    color: #f472b6;
+    border: 1px solid #f472b6;
+}
+
+body.dark-mode .myphoto {
+    border-color: #f472b6;
+}
+
+
+
+/* ===== Mode Switch Button ===== */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.theme-toggle button {
+    background-color: #f0e6ef;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+
+/* ===== navar ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fce4ec;
+    padding: 15px 30px;
+}
+
+.navbar h3 {
+    font-size: 30px;
+    color: #f472b6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f472b6;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+
+.nav-links a:hover {
+    background-color: #f472b6;
+    color: white;
+}
+
+/* ===== Personal photo ===== */
+
+.myphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid #f472b6;
+    position: relative;
+    bottom: 250px;
+    left: 70%;
+}
+/* ===== about text ===== */
+
+.about-text {
+    width: 50%;
+    padding-top: 5% ;
+    padding-left: 7%;
+}
+
+.about-text span {
+    color: #f472b6;
+}
+p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.about-text button{
+    background-color: #f472b6;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    margin-top: 30px;
+    width: 150px;
+}
+.about-text button:hover {
+    background-color: #cc6299;
+}
+/* ===== skills ===== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.skills h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    border: 2px solid #f472b6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skills h3 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.skills h4 {
+    border: 2px solid #f472b6;
+    height: 50px;
+    font-size: 30px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ===== social ===== */
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+    gap: 30px;
+}
+.social-btn {
+    align-items: center;
+    gap: 8px;
+    background-color: #fce4ec;
+    color: black;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* ===== project par ===== */
+
+.project-photo{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.project-par {
+    position: relative;
+    bottom: 350px;
+    left: 80px;
+    width: 50%;
+}
+
+.project-par span {
+    color: #f472b6;
+}
+.project-par p {
+    font-size: 30px;
+}
+
+/* ===== project card ===== */
+.project-card {
+    background-color: #fce4ec;
+    padding: 30px 35px;
+    border-radius: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(214, 51, 108, 0.15);
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.project-btn {
+    align-items: center;
+    background-color: #f472b6;
+    color: black;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    width: 150px;
+}
+
+.project-btn:hover {
+    background-color: #cc6299;
+}
+
+.project-card h3 {
+    font-size: 30px;
+}
+
+.project-card p {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.project-card span {
+    font-size: 30px;
+    color: #f472b6 ;
+}
