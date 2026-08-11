@@ -12,7 +12,7 @@ function toggleTheme() {
         localStorage.setItem('theme', 'dark');
     } else {
         btn.innerHTML = '<i class="fas fa-moon"></i> Dark';
-        img.src = './static/pexels-elletakesphotos-5155218.jpg';  
+        img.src = './static/cover  (1).png';  
         localStorage.setItem('theme', 'light');
     }
 }
@@ -30,6 +30,6 @@ window.onload = function() {
     } else {
         document.body.classList.remove('dark-mode');
         btn.innerHTML = '<i class="fas fa-moon"></i> Dark';
-        img.src = './static/pexels-elletakesphotos-5155218.jpg';
+        img.src = './static/cover  (1).png';
     }
 };

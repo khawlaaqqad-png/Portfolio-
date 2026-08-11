@@ -18,7 +18,9 @@
 
 <!-- Top bar -->
     <nav class="navbar">
-            <h2>Khawla Aqqad</h2>
+        <div class="logo">
+            <h3>Khawla Aqqad</h3>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">About me</a></li>
             <li><a href="projects.html" class="active">My Projects</a></li>
@@ -27,12 +29,12 @@
 
     <div class="about-text" >
         <h1>About <span> Me </span></h1>
-        <p>I’m passionate about front-end web development because I love building responsive, 
-            user-friendly websites that truly meet people’s needs. I care about both design and user experience, 
+        <p>I am passionate about front-end web development because I love building responsive, 
+            user-friendly websites that truly meet people is needs. I care about both design and user experience, 
             and I enjoy creating clean, simple, and flexible interfaces.
         </p>
         <button onclick="window.open('https://docs.google.com/document/d/1Huhkl3bzUAG76ihjNF-Jv4KBVgLShwQun_zowLG6C3U/edit?tab=t.0')">
-            My CV
+            View My CV
         </button>
     </div>
     <img class="myphoto" src="./static/myphoto.png" alt="myphoto">
@@ -40,23 +42,183 @@
 
     <!-- skills bar -->
 
-    <div class="skills">
-        <h2>My Skills</h2>
-        <div>
-            <h3>Technical Skills</h3>
-            <h4>HTML</h4>
-            <h4>CSS</h4>
-            <h4>JavaScript</h4>
-            <h4>SQL</h4>
+    <!-- Skills Section -->
+<section class="skills-section">
+
+    <div class="skills-title">
+        <h2>My <span>Skills</span></h2>
+        <p>Technologies and tools I use to build functional and user-friendly web experiences.</p>
+    </div>
+
+    <div class="skills-container">
+
+        <!-- Frontend -->
+        <div class="skill-card">
+
+            <div class="skill-card-title">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <div>
+                    <h3>Frontend</h3>
+                    <p>Building responsive and interactive user interfaces.</p>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>HTML5</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>CSS3</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Tailwind CSS</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Responsive Design</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
         </div>
+
+
+        <!-- Tools -->
+        <div class="skill-card">
+
+            <div class="skill-card-title">
+                <div class="skill-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+
+                <div>
+                    <h3>Tools</h3>
+                    <p>Tools that help me code, debug and collaborate.</p>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Git</span>
+                    <span>65%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>GitHub</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>VS Code</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Programming & CS -->
+        <div class="skill-card">
+
+            <div class="skill-card-title">
+                <div class="skill-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <div>
+                    <h3>Programming & CS</h3>
+                    <p>Programming knowledge and computer science basics.</p>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Python</span>
+                    <span>50%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Algorithms & Data Structures</span>
+                    <span>55%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 55%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Always Learning -->
+    <div class="learning-box">
+        <div class="learning-icon">
+            <i class="fas fa-star"></i>
+        </div>
+
         <div>
-            <h3>Soft Skills</h3>
-            <h4>Organization </h4>
-            <h4>Problem Solving</h4>
-            <h4>Leadership </h4>
-            <h4>Self-Learning</h4>
+            <h3>Always Learning</h3>
+            <p>
+                I enjoy learning new technologies and improving my skills to build better and more meaningful web applications.
+            </p>
         </div>
     </div>
+
+</section>
 
     <!-- link bar -->
 
@@ -67,8 +229,8 @@
             <a href="https://www.linkedin.com/in/khawla-aqqad" target="_blank" class="social-btn">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="mailto:khawlaaqqad@gmail.com" class="social-btn">
-                <i class="fas fa-envelope"></i> Email
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khawlaaqqad@gmail.com" target="_blank" class="social-btn">
+                <i class="fas fa-envelope"></i> Click to send me an email
             </a>
             <a href="tel:+970595976441" class="social-btn">
                 <i class="fas fa-phone"></i> +970-595976441

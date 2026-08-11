@@ -71,12 +71,6 @@ body.dark-mode .social-btn:hover {
     color: #121212;
 }
 
-body.dark-mode .skills h2,
-body.dark-mode .skills h4 {
-    border-color: #f472b6;
-    color: #e0e0e0;
-}
-
 body.dark-mode .theme-toggle button {
     background-color: #1e1e2f;
     color: #f472b6;
@@ -87,6 +81,35 @@ body.dark-mode .myphoto {
     border-color: #f472b6;
 }
 
+/* ===== Skills Dark Mode ===== */
+
+body.dark-mode .skills-title p,
+body.dark-mode .skill-card-title p,
+body.dark-mode .learning-box p {
+    color: #bdbdbd;
+}
+
+body.dark-mode .skill-card {
+    background-color: #1e1e2f;
+    border-color: #f472b6;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #333344;
+}
+
+body.dark-mode .learning-box {
+    background-color: #1e1e2f;
+    border-color: #f472b6;
+}
+
+body.dark-mode .learning-icon {
+    background-color: #332333;
+}
+
+body.dark-mode .skill-name {
+    color: #e0e0e0;
+}
 
 
 /* ===== Mode Switch Button ===== */
@@ -115,7 +138,7 @@ body.dark-mode .myphoto {
 }
 
 .navbar h3 {
-    font-size: 30px;
+    font-size: 26px;
     color: #f472b6;
 }
 
@@ -127,7 +150,7 @@ body.dark-mode .myphoto {
 
 .nav-links a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #f472b6;
     font-weight: 500;
     padding: 6px 12px;
@@ -143,33 +166,34 @@ body.dark-mode .myphoto {
 /* ===== Personal photo ===== */
 
 .myphoto {
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     border: 4px solid #f472b6;
     position: relative;
-    bottom: 250px;
-    left: 70%;
+    bottom: 340px;
+    left: 60%;
+    margin-bottom: -300px;
 }
 /* ===== about text ===== */
 
 .about-text {
-    width: 50%;
-    padding-top: 5% ;
-    padding-left: 7%;
+    width: 40%;
+    padding-top: 9%;
+    padding-left: 10%;
 }
 
 .about-text span {
     color: #f472b6;
 }
-p {
-    line-height: 30px;
-    font-size: 20px;
+.about-text p {
+    line-height: 1.7;
+    font-size: 17px;
 }
 
 h1 {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .about-text button{
@@ -178,48 +202,165 @@ h1 {
     padding: 12px 30px;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     margin-top: 30px;
-    width: 150px;
+    width: 250px;
 }
 .about-text button:hover {
     background-color: #cc6299;
 }
 /* ===== skills ===== */
+/* ===== Skills Section ===== */
 
-.skills {
+.skills-section {
+    padding: 70px 7%;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.skills-title h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.skills-title h2 span {
+    color: #f472b6;
+}
+
+.skills-title p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* ===== Skills Cards ===== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #fff;
+    border: 1px solid #f8b4d0;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(244, 114, 182, 0.08);
+}
+
+
+/* ===== Card Title ===== */
+
+.skill-card-title {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.skill-card-title h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.skill-card-title p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+
+.skill-icon {
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f472b6;
+    color: white;
+    display: flex;
     justify-content: center;
-    gap: 50px;
-    text-align: center;
+    align-items: center;
+    font-size: 25px;
 }
 
-.skills h2 {
+
+/* ===== Individual Skill ===== */
+
+.skill-item {
+    margin-bottom: 22px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.skill-name span:last-child {
+    color: #f472b6;
+}
+
+
+/* ===== Progress Bar ===== */
+
+.progress-bar {
     width: 100%;
-    text-align: center;
-    font-size: 50px;
-    line-height: 50px;
-    border: 2px solid #f472b6;
-    padding: 20px;
-    border-radius: 10px;
+    height: 12px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.skills h3 {
-    font-size: 40px;
-    line-height: 60px;
+.progress {
+    height: 100%;
+    background-color: #f472b6;
+    border-radius: 20px;
 }
 
-.skills h4 {
-    border: 2px solid #f472b6;
-    height: 50px;
-    font-size: 30px;
-    padding: 5px 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+
+/* ===== Always Learning ===== */
+
+.learning-box {
+    max-width: 1300px;
+    margin: 35px auto 0;
+    padding: 30px 40px;
+    border: 1px solid #f8b4d0;
+    border-radius: 25px;
+    background-color: #fff9fb;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
+.learning-icon {
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffe1ed;
+    color: #f472b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.learning-box h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.learning-box p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #555;
+}
 /* ===== social ===== */
 
 .social {
@@ -237,6 +378,7 @@ h1 {
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
+    font-size: 15px;
 }
 
 
@@ -259,7 +401,9 @@ h1 {
     color: #f472b6;
 }
 .project-par p {
-    font-size: 30px;
+    font-size: 17px;
+    line-height: 1.6;
+    width: 45%;
 }
 
 /* ===== project card ===== */
@@ -272,7 +416,7 @@ h1 {
     width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .project-card:hover {
@@ -295,6 +439,7 @@ h1 {
 }
 
 .project-btn {
+    align-self: flex-end;
     align-items: center;
     background-color: #f472b6;
     color: black;
@@ -303,22 +448,214 @@ h1 {
     text-decoration: none;
     font-weight: 500;
     width: 150px;
+    margin-top: -35px;
+    font-size: 15px;
 }
+
 
 .project-btn:hover {
     background-color: #cc6299;
 }
 
 .project-card h3 {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .project-card p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .project-card span {
-    font-size: 30px;
+    font-size: 15px;
     color: #f472b6 ;
+}
+/* ============================= */
+/* ===== RESPONSIVE DESIGN ===== */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* ===== Navbar ===== */
+    .navbar {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar h3 {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+
+    /* ===== About Me ===== */
+    .about-text {
+        width: 80%;
+        padding: 50px 10%;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-text button {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    /* ===== Personal Photo ===== */
+    .myphoto {
+        display: block;
+        width: 220px;
+        height: 220px;
+        position: static;
+        margin: 0 auto 40px;
+    }
+
+
+    /* ===== Skills ===== */
+    .skills-section {
+        padding: 50px 5%;
+    }
+
+    .skills-title {
+        margin-bottom: 30px;
+    }
+
+    .skills-title h2 {
+        font-size: 32px;
+    }
+
+    .skills-title p {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+
+    /* ===== Always Learning ===== */
+    .learning-box {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .learning-icon {
+        min-width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .learning-box h3 {
+        font-size: 19px;
+    }
+
+    .learning-box p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* ===== Projects Header ===== */
+    .project-photo {
+        height: 300px;
+    }
+
+    .project-par {
+        position: static;
+        width: 80%;
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .project-par p {
+        font-size: 16px;
+    }
+
+
+    /* ===== Projects Cards ===== */
+    .container {
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .container h2 {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .project-card span {
+        font-size: 14px;
+    }
+
+    .project-btn {
+        width: 130px;
+        font-size: 14px;
+        padding: 9px 15px;
+        margin-top: -25px;
+    }
+
+
+    /* ===== Social / Contact ===== */
+    .social {
+        padding: 30px 5%;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .social-btn {
+        font-size: 14px;
+        padding: 9px 16px;
+    }
+
+
+    /* ===== Theme Button ===== */
+    .theme-toggle {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .theme-toggle button {
+        font-size: 14px;
+        padding: 7px 13px;
+    }
 }
