@@ -4,41 +4,155 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ============================= */
 /* ===== DARK MODE ===== */
+/* ============================= */
+
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
 }
 
+
+/* ===== Navbar ===== */
+
 body.dark-mode .navbar {
     background-color: #1e1e2f;
-    border-bottom: 2px solid #f472b6;
+    border-bottom: 1px solid #f472b6;
 }
 
-body.dark-mode .navbar h3,
+body.dark-mode .logo a {
+    color: #f472b6;
+}
+
 body.dark-mode .nav-links a {
     color: #f472b6;
 }
 
-body.dark-mode .nav-links a:hover {
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
     background-color: #f472b6;
     color: #121212;
 }
 
-body.dark-mode .about-text span,
-body.dark-mode .project-par span {
+
+/* ===== Hero ===== */
+
+body.dark-mode .hero-label {
+    color: #bdbdbd;
+}
+
+body.dark-mode .hero-big-name {
     color: #f472b6;
 }
 
-body.dark-mode .about-text button {
+body.dark-mode .hero-role {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-content h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .hero-description {
+    color: #bdbdbd;
+}
+
+body.dark-mode .hero-bg-text {
+    color: rgba(244, 114, 182, 0.12);
+}
+
+body.dark-mode .photo-card {
+    background-color: #1e1e2f;
+}
+
+body.dark-mode .hero-btn.secondary {
+    color: #f472b6;
+}
+
+body.dark-mode .hero-btn.secondary:hover {
+    background-color: #332333;
+}
+
+
+/* ===== Skills ===== */
+
+body.dark-mode .skills-title p {
+    color: #bdbdbd;
+}
+
+body.dark-mode .skills-card {
+    background-color: #1e1e2f;
+    border-color: #f472b6;
+}
+
+body.dark-mode .skills-card-header p {
+    color: #bdbdbd;
+}
+
+body.dark-mode .skills-tags span {
+    background-color: #332333;
+    color: #e0e0e0;
+    border-color: #f472b6;
+}
+
+body.dark-mode .learning-box {
+    background-color: #1e1e2f;
+    border-color: #f472b6;
+}
+
+body.dark-mode .learning-box p {
+    color: #bdbdbd;
+}
+
+body.dark-mode .learning-icon {
+    background-color: #332333;
+}
+
+
+/* ===== Social ===== */
+
+body.dark-mode .social-btn {
+    background-color: #1e1e2f;
+    color: #f472b6;
+    border: 1px solid #f472b6;
+}
+
+body.dark-mode .social-btn:hover {
     background-color: #f472b6;
     color: #121212;
 }
 
-body.dark-mode .about-text button:hover {
-    background-color: #d6336c;
-    color: white;
+
+/* ===== Projects Hero ===== */
+
+body.dark-mode .projects-hero {
+    background-color: #181818;
 }
+
+body.dark-mode .projects-label {
+    color: #bdbdbd;
+}
+
+body.dark-mode .projects-description {
+    color: #bdbdbd;
+}
+
+body.dark-mode .projects-mini-card {
+    background-color: #1e1e2f;
+    border-color: #f472b6;
+}
+
+body.dark-mode .projects-mini-card p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .projects-hero-design h2 {
+    color: rgba(244, 114, 182, 0.12);
+}
+
+
+/* ===== Project Cards ===== */
 
 body.dark-mode .project-card {
     background-color: #1e1e2f;
@@ -60,57 +174,14 @@ body.dark-mode .project-btn:hover {
     color: white;
 }
 
-body.dark-mode .social-btn {
-    background-color: #1e1e2f;
-    color: #f472b6;
-    border: 1px solid #f472b6;
-}
 
-body.dark-mode .social-btn:hover {
-    background-color: #f472b6;
-    color: #121212;
-}
+/* ===== Theme Button ===== */
 
 body.dark-mode .theme-toggle button {
     background-color: #1e1e2f;
     color: #f472b6;
     border: 1px solid #f472b6;
 }
-
-body.dark-mode .myphoto {
-    border-color: #f472b6;
-}
-
-/* ===== Skills Dark Mode ===== */
-
-body.dark-mode .skills-title p,
-body.dark-mode .skill-card-title p,
-body.dark-mode .learning-box p {
-    color: #bdbdbd;
-}
-
-body.dark-mode .skill-card {
-    background-color: #1e1e2f;
-    border-color: #f472b6;
-}
-
-body.dark-mode .progress-bar {
-    background-color: #333344;
-}
-
-body.dark-mode .learning-box {
-    background-color: #1e1e2f;
-    border-color: #f472b6;
-}
-
-body.dark-mode .learning-icon {
-    background-color: #332333;
-}
-
-body.dark-mode .skill-name {
-    color: #e0e0e0;
-}
-
 
 /* ===== Mode Switch Button ===== */
 .theme-toggle {
@@ -137,9 +208,14 @@ body.dark-mode .skill-name {
     padding: 15px 30px;
 }
 
-.navbar h3 {
-    font-size: 26px;
+.logo a {
+    text-decoration: none;
     color: #f472b6;
+    font-family: 'Allura', cursive;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 20px;
 }
 
 .nav-links {
@@ -163,59 +239,187 @@ body.dark-mode .skill-name {
     color: white;
 }
 
-/* ===== Personal photo ===== */
-
-.myphoto {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 4px solid #f472b6;
-    position: relative;
-    bottom: 340px;
-    left: 60%;
-    margin-bottom: -300px;
-}
-/* ===== about text ===== */
-
-.about-text {
-    width: 40%;
-    padding-top: 9%;
-    padding-left: 10%;
+.nav-links a.active {
+    background-color: #f472b6;
+    color: white;
 }
 
-.about-text span {
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 8%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+/* ===== LEFT SIDE ===== */
+
+.hero-content {
+    width: 48%;
+}
+
+
+/* ===== Small Text ===== */
+
+.hero-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+
+/* ===== Big Name ===== */
+
+.hero-big-name {
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1;
     color: #f472b6;
+    margin-bottom: 12px;
 }
-.about-text p {
-    line-height: 1.7;
+
+
+/* ===== Role ===== */
+
+.hero-role {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+    margin-bottom: 28px;
+}
+
+
+/* ===== Main Hero Text ===== */
+
+.hero-content h2 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    max-width: 620px;
+}
+
+
+/* ===== Description ===== */
+
+.hero-description {
     font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    max-width: 620px;
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-size: 38px;
+
+/* ===== Buttons ===== */
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
 }
 
-.about-text button{
+
+.hero-btn {
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.hero-btn.primary {
     background-color: #f472b6;
     color: black;
-    padding: 12px 30px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    border: none;
-    margin-top: 30px;
-    width: 250px;
 }
-.about-text button:hover {
+
+
+.hero-btn.primary:hover {
     background-color: #cc6299;
 }
+
+
+.hero-btn.secondary {
+    border: 2px solid #f472b6;
+    color: #f472b6;
+    background-color: transparent;
+}
+
+
+.hero-btn.secondary:hover {
+    background-color: #fce4ec;
+}
+
+
+/* ===== RIGHT SIDE ===== */
+
+.hero-image-area {
+    width: 46%;
+    min-height: 610px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-35px);
+}
+
+
+/* ===== PORTFOLIO BACKGROUND ===== */
+
+.hero-bg-text {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    color: rgba(244, 114, 182, 0.10);
+    white-space: nowrap;
+    z-index: 0;
+}
+
+
+/* ===== PHOTO CARD ===== */
+
+.photo-card {
+    width: 430px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 16px;
+    border-radius: 30px;
+    margin-top: -10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===== PHOTO ===== */
+
+.hero-photo {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+}
 /* ===== skills ===== */
+/* ===== Skills Section ===== */
 /* ===== Skills Section ===== */
 
 .skills-section {
     padding: 70px 7%;
 }
+
+
+/* ===== Skills Title ===== */
 
 .skills-title {
     text-align: center;
@@ -237,102 +441,91 @@ h1 {
 }
 
 
-/* ===== Skills Cards ===== */
-
-.skills-container {
+/* ===== Skills Grid ===== */
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 
-.skill-card {
-    background-color: #fff;
+
+/* ===== Skills Card ===== */
+.skills-card {
+    background-color: white;
     border: 1px solid #f8b4d0;
-    border-radius: 25px;
+    border-radius: 24px;
     padding: 30px;
     box-shadow: 0 5px 20px rgba(244, 114, 182, 0.08);
+    transition: 0.3s;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(244, 114, 182, 0.15);
 }
 
 
-/* ===== Card Title ===== */
-
-.skill-card-title {
+/* ===== Card Header ===== */
+.skills-card-header {
     display: flex;
     align-items: center;
     gap: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.skill-card-title h3 {
+.skills-card-header h3 {
     font-size: 21px;
     margin-bottom: 5px;
 }
 
-.skill-card-title p {
+.skills-card-header p {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.5;
     color: #666;
 }
 
-.skill-icon {
-    min-width: 60px;
-    height: 60px;
+
+/* ===== Icon ===== */
+.skills-icon {
+    min-width: 58px;
+    height: 58px;
     border-radius: 50%;
     background-color: #f472b6;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 
-/* ===== Individual Skill ===== */
-
-.skill-item {
-    margin-bottom: 22px;
-}
-
-.skill-name {
+/* ===== Skill Tags ===== */
+.skills-tags {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
-    font-size: 15px;
-    font-weight: 600;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.skill-name span:last-child {
-    color: #f472b6;
-}
-
-
-/* ===== Progress Bar ===== */
-
-.progress-bar {
-    width: 100%;
-    height: 12px;
-    background-color: #eeeeee;
+.skills-tags span {
+    background-color: #fce4ec;
+    color: #555;
+    border: 1px solid #f8b4d0;
+    padding: 8px 14px;
     border-radius: 20px;
-    overflow: hidden;
-}
-
-.progress {
-    height: 100%;
-    background-color: #f472b6;
-    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
 /* ===== Always Learning ===== */
-
 .learning-box {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 35px auto 0;
     padding: 30px 40px;
     border: 1px solid #f8b4d0;
-    border-radius: 25px;
+    border-radius: 24px;
     background-color: #fff9fb;
     display: flex;
     align-items: center;
@@ -358,9 +551,10 @@ h1 {
 
 .learning-box p {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 1.7;
     color: #555;
 }
+
 /* ===== social ===== */
 
 .social {
@@ -383,18 +577,113 @@ h1 {
 
 
 /* ===== project par ===== */
+/* ===== Projects Hero ===== */
 
-.project-photo{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.projects-hero {
+    min-height: 55vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background-color: #fff9fb;
+
+    overflow: hidden;
 }
 
-.project-par {
+
+/* ===== Left Side ===== */
+
+.projects-hero-text {
+    width: 55%;
+}
+
+.projects-label {
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    color: #777;
+
+    margin-bottom: 12px;
+}
+
+.projects-hero-text h1 {
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.projects-hero-text h1 span {
+    color: #f472b6;
+}
+
+.projects-description {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #666;
+
+    max-width: 650px;
+}
+
+
+/* ===== Right Side ===== */
+
+.projects-hero-design {
+    width: 40%;
+
+    min-height: 350px;
+
     position: relative;
-    bottom: 350px;
-    left: 80px;
-    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===== Background Word ===== */
+.projects-hero-design h2 {
+    position: absolute;
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(244, 114, 182, 0.10);
+    letter-spacing: -3px;
+    z-index: 0;
+}
+
+
+/* ===== Small Card ===== */
+.projects-mini-card {
+    position: relative;
+    z-index: 2;
+    width: 260px;
+    background-color: white;
+    border: 1px solid #f8b4d0;
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(244, 114, 182, 0.10);
+}
+
+.projects-mini-card i {
+    font-size: 45px;
+    color: #f472b6;
+    margin-bottom: 15px;
+}
+
+.projects-mini-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
 }
 
 .project-par span {
@@ -452,7 +741,6 @@ h1 {
     font-size: 15px;
 }
 
-
 .project-btn:hover {
     background-color: #cc6299;
 }
@@ -476,61 +764,124 @@ h1 {
 
 @media (max-width: 768px) {
 
+
     /* ===== Navbar ===== */
+
     .navbar {
         padding: 12px 20px;
-        flex-direction: column;
+
+        flex-direction: row;
+
         gap: 15px;
     }
 
-    .navbar h3 {
-        font-size: 24px;
+    .logo a {
+        font-size: 36px;
+
+        margin-left: 0;
     }
 
     .nav-links {
-        gap: 10px;
+        gap: 5px;
+
         flex-wrap: wrap;
-        justify-content: center;
+
+        justify-content: flex-end;
     }
 
     .nav-links a {
         font-size: 14px;
+
         padding: 5px 8px;
     }
 
 
-    /* ===== About Me ===== */
-    .about-text {
-        width: 80%;
-        padding: 50px 10%;
+    /* ===== Hero ===== */
+
+    .hero-section {
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 50px 6%;
+
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+
         text-align: center;
     }
 
-    .about-text h1 {
-        font-size: 32px;
+    .hero-label {
+        font-size: 13px;
     }
 
-    .about-text p {
+    .hero-big-name {
+        font-size: 50px;
+    }
+
+    .hero-role {
         font-size: 16px;
-        line-height: 1.6;
+
+        letter-spacing: 2px;
+
+        margin-bottom: 22px;
     }
 
-    .about-text button {
-        width: 200px;
+    .hero-content h2 {
+        font-size: 24px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-description {
         font-size: 15px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    /* ===== Personal Photo ===== */
-    .myphoto {
-        display: block;
-        width: 220px;
-        height: 220px;
-        position: static;
-        margin: 0 auto 40px;
+    .hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* ===== Hero Image ===== */
+
+    .hero-image-area {
+        width: 100%;
+
+        min-height: 470px;
+
+        transform: none;
+    }
+
+    .hero-bg-text {
+        font-size: 72px;
+
+        top: 95px;
+    }
+
+    .photo-card {
+        width: 300px;
+
+        padding: 12px;
+
+        margin-top: 0;
+    }
+
+    .hero-photo {
+        height: 400px;
     }
 
 
     /* ===== Skills ===== */
+
     .skills-section {
         padding: 50px 5%;
     }
@@ -547,25 +898,58 @@ h1 {
         font-size: 15px;
     }
 
-    .skills-container {
+    .skills-grid {
         grid-template-columns: 1fr;
+
         gap: 20px;
     }
 
-    .skill-card {
+    .skills-card {
         padding: 25px;
+    }
+
+    .skills-card-header {
+        gap: 15px;
+    }
+
+    .skills-card-header h3 {
+        font-size: 20px;
+    }
+
+    .skills-card-header p {
+        font-size: 13px;
+    }
+
+    .skills-tags {
+        gap: 8px;
+    }
+
+    .skills-tags span {
+        font-size: 13px;
+
+        padding: 7px 12px;
     }
 
 
     /* ===== Always Learning ===== */
+
     .learning-box {
         padding: 25px;
+
         gap: 15px;
+
+        flex-direction: column;
+
+        text-align: center;
     }
 
     .learning-icon {
         min-width: 50px;
+
+        width: 50px;
+
         height: 50px;
+
         font-size: 20px;
     }
 
@@ -575,42 +959,100 @@ h1 {
 
     .learning-box p {
         font-size: 14px;
-        line-height: 1.6;
     }
 
 
-    /* ===== Projects Header ===== */
-    .project-photo {
-        height: 300px;
+    /* ===== Social ===== */
+
+    .social {
+        padding: 30px 5%;
+
+        gap: 12px;
+
+        flex-wrap: wrap;
     }
 
-    .project-par {
-        position: static;
-        width: 80%;
-        margin: 25px auto;
+    .social-btn {
+        font-size: 13px;
+
+        padding: 9px 14px;
+    }
+
+
+    /* ===== Projects Hero ===== */
+
+    .projects-hero {
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 50px 6%;
+
         text-align: center;
+
+        gap: 20px;
     }
 
-    .project-par p {
-        font-size: 16px;
+    .projects-hero-text {
+        width: 100%;
+    }
+
+    .projects-label {
+        font-size: 13px;
+    }
+
+    .projects-hero-text h1 {
+        font-size: 36px;
+    }
+
+    .projects-description {
+        font-size: 15px;
+
+        margin: auto;
+    }
+
+    .projects-hero-design {
+        width: 100%;
+
+        min-height: 280px;
+    }
+
+    .projects-hero-design h2 {
+        font-size: 75px;
+    }
+
+    .projects-mini-card {
+        width: 220px;
+
+        padding: 28px;
+    }
+
+    .projects-mini-card i {
+        font-size: 38px;
     }
 
 
     /* ===== Projects Cards ===== */
+
     .container {
         width: 90%;
+
         margin: auto;
+
         gap: 20px;
     }
 
     .container h2 {
         font-size: 32px;
-        margin-top: 10px;
+
+        margin-top: 25px;
     }
 
     .project-card {
         width: 100%;
+
         box-sizing: border-box;
+
         padding: 25px;
     }
 
@@ -620,6 +1062,7 @@ h1 {
 
     .project-card p {
         font-size: 15px;
+
         line-height: 1.6;
     }
 
@@ -629,33 +1072,27 @@ h1 {
 
     .project-btn {
         width: 130px;
+
         font-size: 14px;
+
         padding: 9px 15px;
-        margin-top: -25px;
-    }
 
-
-    /* ===== Social / Contact ===== */
-    .social {
-        padding: 30px 5%;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .social-btn {
-        font-size: 14px;
-        padding: 9px 16px;
+        margin-top: 0;
     }
 
 
     /* ===== Theme Button ===== */
+
     .theme-toggle {
         bottom: 15px;
+
         right: 15px;
     }
 
     .theme-toggle button {
         font-size: 14px;
+
         padding: 7px 13px;
     }
-}
+
+}x;
