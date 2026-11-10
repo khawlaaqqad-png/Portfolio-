@@ -4,9 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ============================= */
-/* ===== DARK MODE ===== */
-/* ============================= */
+/*DARK MODE*/
 
 body.dark-mode {
     background-color: #121212;
@@ -14,7 +12,7 @@ body.dark-mode {
 }
 
 
-/* ===== Navbar ===== */
+/*Navbar*/
 
 body.dark-mode .navbar {
     background-color: #1e1e2f;
@@ -36,7 +34,7 @@ body.dark-mode .nav-links a.active {
 }
 
 
-/* ===== Hero ===== */
+/*Hero*/
 
 body.dark-mode .hero-label {
     color: #bdbdbd;
@@ -75,7 +73,7 @@ body.dark-mode .hero-btn.secondary:hover {
 }
 
 
-/* ===== Skills ===== */
+/*Skills*/
 
 body.dark-mode .skills-title p {
     color: #bdbdbd;
@@ -110,7 +108,7 @@ body.dark-mode .learning-icon {
 }
 
 
-/* ===== Social ===== */
+/*Social*/
 
 body.dark-mode .social-btn {
     background-color: #1e1e2f;
@@ -124,7 +122,7 @@ body.dark-mode .social-btn:hover {
 }
 
 
-/* ===== Projects Hero ===== */
+/*Projects Hero*/
 
 body.dark-mode .projects-hero {
     background-color: #181818;
@@ -152,7 +150,7 @@ body.dark-mode .projects-hero-design h2 {
 }
 
 
-/* ===== Project Cards ===== */
+/*Project Cards*/
 
 body.dark-mode .project-card {
     background-color: #1e1e2f;
@@ -175,7 +173,7 @@ body.dark-mode .project-btn:hover {
 }
 
 
-/* ===== Theme Button ===== */
+/*Theme Button*/
 
 body.dark-mode .theme-toggle button {
     background-color: #1e1e2f;
@@ -183,7 +181,7 @@ body.dark-mode .theme-toggle button {
     border: 1px solid #f472b6;
 }
 
-/* ===== Mode Switch Button ===== */
+/*Mode Switch Button*/
 .theme-toggle {
     position: fixed;
     bottom: 20px;
@@ -199,7 +197,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== navar ===== */
+/*navar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -244,7 +242,7 @@ body.dark-mode .theme-toggle button {
     color: white;
 }
 
-/* ===== HERO SECTION ===== */
+/*HERO SECTION*/
 
 .hero-section {
     min-height: 85vh;
@@ -257,14 +255,14 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== LEFT SIDE ===== */
+/*LEFT SIDE*/
 
 .hero-content {
     width: 48%;
 }
 
 
-/* ===== Small Text ===== */
+/*Small Text*/
 
 .hero-label {
     font-size: 16px;
@@ -275,7 +273,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Big Name ===== */
+/*Big Name*/
 
 .hero-big-name {
     font-size: 76px;
@@ -286,7 +284,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Role ===== */
+/*Role*/
 
 .hero-role {
     font-size: 20px;
@@ -297,7 +295,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Main Hero Text ===== */
+/*Main Hero Text*/
 
 .hero-content h2 {
     font-size: 30px;
@@ -307,7 +305,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Description ===== */
+/*Description*/
 
 .hero-description {
     font-size: 17px;
@@ -317,7 +315,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Buttons ===== */
+/*Buttons*/
 
 .hero-buttons {
     display: flex;
@@ -358,7 +356,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== RIGHT SIDE ===== */
+/*RIGHT SIDE*/
 
 .hero-image-area {
     width: 46%;
@@ -371,7 +369,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== PORTFOLIO BACKGROUND ===== */
+/*PORTFOLIO BACKGROUND*/
 
 .hero-bg-text {
     position: absolute;
@@ -387,7 +385,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== PHOTO CARD ===== */
+/*PHOTO CARD*/
 
 .photo-card {
     width: 430px;
@@ -401,7 +399,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== PHOTO ===== */
+/*PHOTO*/
 
 .hero-photo {
     width: 100%;
@@ -410,16 +408,15 @@ body.dark-mode .theme-toggle button {
     border-radius: 24px;
     display: block;
 }
-/* ===== skills ===== */
-/* ===== Skills Section ===== */
-/* ===== Skills Section ===== */
+/*skills*/
+/*Skills Section*/
 
 .skills-section {
     padding: 70px 7%;
 }
 
 
-/* ===== Skills Title ===== */
+/*Skills Title*/
 
 .skills-title {
     text-align: center;
@@ -441,7 +438,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Skills Grid ===== */
+/*Skills Grid*/
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -451,7 +448,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Skills Card ===== */
+/*Skills Card*/
 .skills-card {
     background-color: white;
     border: 1px solid #f8b4d0;
@@ -467,7 +464,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Card Header ===== */
+/*Card Header*/
 .skills-card-header {
     display: flex;
     align-items: center;
@@ -487,7 +484,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Icon ===== */
+/*Icon*/
 .skills-icon {
     min-width: 58px;
     height: 58px;
@@ -501,7 +498,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Skill Tags ===== */
+/*Skill Tags*/
 .skills-tags {
     display: flex;
     flex-wrap: wrap;
@@ -519,7 +516,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Always Learning ===== */
+/*Always Learning*/
 .learning-box {
     max-width: 1200px;
     margin: 35px auto 0;
@@ -555,7 +552,7 @@ body.dark-mode .theme-toggle button {
     color: #555;
 }
 
-/* ===== social ===== */
+/*social*/
 
 .social {
     display: flex;
@@ -576,8 +573,8 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== project par ===== */
-/* ===== Projects Hero ===== */
+/*project par*/
+/*Projects Hero*/
 
 .projects-hero {
     min-height: 55vh;
@@ -594,7 +591,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Left Side ===== */
+/*Left Side*/
 
 .projects-hero-text {
     width: 55%;
@@ -635,7 +632,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Right Side ===== */
+/*Right Side*/
 
 .projects-hero-design {
     width: 40%;
@@ -650,7 +647,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Background Word ===== */
+/*Background Word*/
 .projects-hero-design h2 {
     position: absolute;
     font-size: 120px;
@@ -661,7 +658,7 @@ body.dark-mode .theme-toggle button {
 }
 
 
-/* ===== Small Card ===== */
+/*Small Card*/
 .projects-mini-card {
     position: relative;
     z-index: 2;
@@ -695,7 +692,7 @@ body.dark-mode .theme-toggle button {
     width: 45%;
 }
 
-/* ===== project card ===== */
+/*project card*/
 .project-card {
     background-color: #fce4ec;
     padding: 30px 35px;
@@ -758,14 +755,35 @@ body.dark-mode .theme-toggle button {
     font-size: 15px;
     color: #f472b6 ;
 }
-/* ============================= */
-/* ===== RESPONSIVE DESIGN ===== */
-/* ============================= */
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+/*Project Type*/
+
+.project-type {
+    width: fit-content;
+    background-color: #fff9fb;
+    color: #f472b6;
+    border: 1px solid #f8b4d0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px !important;
+    font-weight: 600;
+}
+
+body.dark-mode .project-type {
+    background-color: #332333;
+    color: #f472b6;
+    border-color: #f472b6;
+}
+/*RESPONSIVE DESIGN*/
 
 @media (max-width: 768px) {
 
 
-    /* ===== Navbar ===== */
+    /*Navbar*/
 
     .navbar {
         padding: 12px 20px;
@@ -796,7 +814,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Hero ===== */
+    /*Hero*/
 
     .hero-section {
         min-height: auto;
@@ -851,7 +869,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Hero Image ===== */
+    /*Hero Image*/
 
     .hero-image-area {
         width: 100%;
@@ -880,7 +898,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Skills ===== */
+    /*Skills*/
 
     .skills-section {
         padding: 50px 5%;
@@ -931,7 +949,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Always Learning ===== */
+    /*Always Learning*/
 
     .learning-box {
         padding: 25px;
@@ -962,7 +980,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Social ===== */
+    /*Social*/
 
     .social {
         padding: 30px 5%;
@@ -979,7 +997,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Projects Hero ===== */
+    /*Projects Hero*/
 
     .projects-hero {
         min-height: auto;
@@ -1032,7 +1050,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Projects Cards ===== */
+    /*Projects Cards*/
 
     .container {
         width: 90%;
@@ -1081,7 +1099,7 @@ body.dark-mode .theme-toggle button {
     }
 
 
-    /* ===== Theme Button ===== */
+    /*Theme Button*/
 
     .theme-toggle {
         bottom: 15px;
@@ -1095,4 +1113,4 @@ body.dark-mode .theme-toggle button {
         padding: 7px 13px;
     }
 
-}x;
+}
